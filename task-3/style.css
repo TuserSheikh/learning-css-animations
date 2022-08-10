@@ -54,6 +54,26 @@ button {
   transition-duration: 5s;
 }
 
+button.ease {
+  transition-timing-function: ease;
+}
+
+button.linear {
+  transition-timing-function: linear;
+}
+
+button.ease-in {
+  transition-timing-function: ease-in;
+}
+
+button.ease-out {
+  transition-timing-function: ease-out;
+}
+
+button.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
 button:hover {
   transform: translateX(1200px);
   cursor: pointer;
