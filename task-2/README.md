@@ -1,5 +1,5 @@
 # Transition
 
-Button background transition on hover effect
+Button background transition delay on hover effect
 
 [Live link](https://tusersheikh.github.io/learning-css-animations/task-2/)
