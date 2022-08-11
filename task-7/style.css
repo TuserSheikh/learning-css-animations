@@ -65,14 +65,14 @@ button:hover {
 }
 
 button.one:hover {
-  transform: scale(2);
+  transform: translate(-200px, -200px);
 }
 button.two:hover {
-  transform: scaleX(0.5);
+  transform: translate(200px, -200px);
 }
 button.three:hover {
-  transform: scaleY(1.5);
+  transform: translate(-200px, 200px);
 }
 button.four:hover {
-  transform: scale(0.5);
+  transform: translate(200px, 200px);
 }
