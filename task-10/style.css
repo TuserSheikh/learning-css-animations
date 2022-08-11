@@ -1,0 +1,79 @@
+/* start Minimal CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* end Minimal CSS Reset */
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+.container {
+  height: 50%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: hsl(50, 50%, 50%);
+  transition: transform 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+button.one {
+  transform-origin: top left;
+}
+button.two {
+  transform-origin: bottom right;
+}
+button.three {
+  transform-origin: left;
+}
+button.four {
+  transform-origin: 70% 70%;
+}
