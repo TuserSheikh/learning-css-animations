@@ -1,5 +1,5 @@
-# Transform - scale()
+# Transform - translate()
 
-Transform - scale() function
+Transform - translate() function
 
 [Live link](https://tusersheikh.github.io/learning-css-animations/task-7/)
