@@ -1,0 +1,100 @@
+/* start Minimal CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* end Minimal CSS Reset */
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  font-size: 1.5rem;
+  height: 80px;
+  width: 250px;
+  position: relative;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button::before,
+button::after {
+  content: "";
+  width: 105%;
+  height: 115%;
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: 0.3s;
+}
+
+button::before {
+  background: #1e81b0;
+  top: -15%;
+  left: -5%;
+}
+
+button::after {
+  background: #b0a51e;
+  bottom: -15%;
+  right: -5%;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+button:hover::before {
+  transform-origin: top;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+button:hover::after {
+  transform: perspective(1000px) rotateX(-75deg);
+  transform-origin: bottom;
+}
+
+button:hover {
+  color: black;
+}
